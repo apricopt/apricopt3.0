@@ -1,0 +1,80 @@
+   <section class="page-title" style="background-image:url(images/background/5.jpg)">
+		<div class="pattern-layer" style="background-image:url(images/background/pattern-21.png)"></div>
+		<div class="pattern-layer-two" style="background-image:url(images/icons/pattern-1.png)"></div>
+        <div class="auto-container">
+			<div class="inner-container clearfix">
+				<div class="pull-left">
+					<h2>Jobs in Apricopt</h2>
+                    <div class="text">We need intelligent and hardworking people like you!</div>
+				</div>
+                <div class="pull-right">
+					<ul class="bread-crumb clearfix">
+						<li><a href="/">Home</a></li>
+						<li>Career</li>
+					</ul>
+				</div>
+            </div>
+        </div>
+    </section>
+
+      <section class="contact-form-section">
+    	<div class="auto-container">
+			<!-- Sec Title -->
+			<div class="sec-title centered">
+                {{#if message}}
+                <h4 class="text-warning">{{message}}</h4>
+                {{/if}}
+				<h2><span>Apply</span> now</h2>
+                <div class="text">The future depends on what you do today. <br> Apply now to build your future</div>
+			</div>
+
+{{!-- inner container starts --}}
+
+<div class="inner-container">
+    <!-- Contact Form -->
+				<div class="contact-form">
+                    <form method="POST" action="/career" enctype='multipart/form-data'>
+<div class="row clearfix">
+
+<div class="form-group col-lg-6 col-md-6 col-sm-12">
+<input type="text" name="name" value="" placeholder="Your Name" required>
+</div>
+
+<div class="form-group col-lg-6 col-md-6 col-sm-12">
+<input type="email" name="email" value="" placeholder="Your Email" required>
+</div>
+
+<div class="form-group col-lg-6 col-md-6 col-sm-12">
+<input type="text" name="position" value="" placeholder="Position" required>
+</div>
+<div class="form-group col-lg-6 col-md-6 col-sm-12">
+    <label for="cv">Drop your resume</label>
+    <br>
+<input type="file" name="image"   required>
+</div>
+
+<div class="form-group col-lg-6 col-md-6 col-sm-12">
+<input type="text" name="phone" value="" placeholder="Phone" required>
+</div>
+<div class="form-group col-lg-6 col-md-6 col-sm-12">
+<input type="text" name="location" value="" placeholder="Location" required>
+</div>
+
+<div class="form-group col-lg-12 col-md-12 col-sm-12">
+<textarea name="message" placeholder="Additonal Information (Optional)"></textarea>
+</div>
+
+<div class="form-group col-lg-12 col-md-12 col-sm-12 text-center">
+<button type="submit" class="theme-btn btn-style-three"><span class="txt">Apply Now</span></button>
+</div>
+
+</div>
+				</div>
+				<!-- End Contact Form -->
+                    </form>
+</div>
+
+{{!-- inner container will come here --}}
+	<!-- Contact Info Section -->
+        </div>
+      </section>
